@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "417499801197",
+    "project_id": "ateez-9948d",
+    "storage_bucket": "ateez-9948d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417499801197:android:ccce108048b12c742a4164",
+        "android_client_info": {
+          "package_name": "com.first.ateez"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417499801197-2ifiir1276ccarnehgri1dludjhsacsj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.first.ateez",
+            "certificate_hash": "1358f102f85db99a55e9933ed2ffa6ae5cf4542f"
+          }
+        },
+        {
+          "client_id": "417499801197-jkfonf187blpjenfvk33smm69u816inb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4uQ-GJjFm3a8VVJAPZqmY1Rhklg_ULw4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417499801197-jkfonf187blpjenfvk33smm69u816inb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

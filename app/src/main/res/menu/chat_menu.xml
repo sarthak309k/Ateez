@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/chats"
+        android:icon="@drawable/ic_baseline_chat_24"
+        android:title="chats" />
+    <item
+        android:id="@+id/groupchats"
+        android:icon="@drawable/ic_baseline_groups_24"
+        android:title="groupchats" />
+    <item
+        android:id="@+id/camera"
+        android:icon="@drawable/ic_baseline_camera_24"
+        android:title="camera" />
+    <item
+        android:id="@+id/story"
+        android:icon="@drawable/ic_baseline_camera_enhance_24"
+        android:title="story" />
+    <item
+        android:id="@+id/calls"
+        android:icon="@drawable/ic_baseline_call_24"
+        android:title="calls" />
+</menu>

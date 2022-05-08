@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.mobilenumber">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="232dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="36dp"
+        android:layout_x="81dp"
+        android:layout_y="47dp"
+        android:padding="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/phone2" />
+
+    <TextView
+        android:id="@+id/phoneLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_x="57dp"
+        android:layout_y="233dp"
+        android:text="Verify Your Phone Number"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar"
+        app:layout_constraintEnd_toEndOf="@+id/avatar"
+        app:layout_constraintStart_toStartOf="@+id/avatar"
+        app:layout_constraintTop_toBottomOf="@+id/avatar" />
+
+    <TextView
+        android:id="@+id/displaymessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_x="34dp"
+        android:layout_y="274dp"
+        android:gravity="center"
+        android:text="Ateez will send an SMS message to verify your phone number"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/phoneLable"
+        app:layout_constraintEnd_toEndOf="@+id/phoneLable"
+        app:layout_constraintStart_toStartOf="@+id/phoneLable"
+        app:layout_constraintTop_toBottomOf="@+id/phoneLable" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_x="3dp"
+        android:layout_y="308dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="353dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/phonebox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/username_outline"
+                    android:ems="10"
+                    android:hint="Enter Phone Number"
+                    android:inputType="phone"
+                    android:padding="10dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <Button
+                        android:id="@+id/sendotpbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:backgroundTint="#000000"
+                        android:padding="10dp"
+                        android:text="Send otp"
+                        app:cornerRadius="20dp" />
+
+
+                    <ProgressBar
+                        android:id="@+id/sendotpprg"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"/>
+                </FrameLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</AbsoluteLayout>

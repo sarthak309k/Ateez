@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.first.ateez">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BIND_CARRIER_MESSAGING_CLIENT_SERVICE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ateez"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Activities.Statusstory"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.createatask"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.todohome"
+            android:exported="false"></activity>
+        <activity
+            android:name=".mobilelogin"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.chatSingle"
+            android:exported="false" />
+        <activity
+            android:name=".MainScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.chat_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.userprofile"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.otpverify"
+            android:exported="true"/>
+        <activity
+            android:name=".Activities.mobilenumber"
+            android:exported="true">
+            android:windowSoftInputMode="stateVisible"
+        </activity>
+        <activity
+            android:name=".Activities.Signup"
+            android:exported="true"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".Activities.Login"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts"
+      />
+        <meta-data
+            android:name="AA_MODELS"
+            android:value=" com.first.ateez.Models.User"
+            />
+
+        <receiver android:name=".Activities.otpverify" />
+        <receiver android:name=".Activities.Otpreceive"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
